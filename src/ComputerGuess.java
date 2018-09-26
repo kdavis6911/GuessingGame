@@ -1,2 +1,4 @@
-public class ComputerGuess {
+public class ComputerGuess
+{
+
 }
