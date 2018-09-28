@@ -19,7 +19,7 @@ public class GuessingGame
             int answer = (int) (Math.random() * 100);
             Scanner input = new Scanner(System.in);
             System.out.println("Please type in the number I am thinking of");
-            int guess = input.nextInt();
+            int guess = 101;
             while (guess != answer) {
                 try
                 {
@@ -42,6 +42,7 @@ public class GuessingGame
                 catch(InputMismatchException e)
                 {
                     System.out.println("I'm sorry but that's not a number, please try again");
+                    input.next();
                 }
             }
         }
